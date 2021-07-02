@@ -28,11 +28,34 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.App-button-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.App-button{
+  font-size: calc(10px + 2vmin);
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.start{
+  background-color: #ff6c52;
+}
+
+.history{
+  background-color: #ffce00;
+}
+
+/*@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/
