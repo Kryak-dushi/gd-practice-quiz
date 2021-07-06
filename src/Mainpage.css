@@ -37,6 +37,14 @@
   background-color: #ff6c52;
 }
 
+.button-red:hover {
+  background-color: #f92814;
+}
+
 .button-yellow {
   background-color: #ffce00;
+}
+
+.button-yellow:hover {
+  background-color: #fdba12;
 }

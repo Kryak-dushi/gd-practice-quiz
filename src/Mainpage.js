@@ -1,14 +1,12 @@
 import logo from './quiz.png';
+import Content from './Content'
 import './Mainpage.css';
 
 function Mainpage() {
   return (
     <div className="mainpage">
       <img src={logo} className="mainpage-logo" alt="logo" />
-      <div className="mainpage-button-container">
-        <button className="mainpage-button button-red">START</button>
-        <button className="mainpage-button button-yellow">HISTORY</button>
-      </div>
+      <Content />
     </div>
   );
 }
