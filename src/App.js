@@ -1,17 +1,13 @@
-import logo from './quiz.png';
-import './App.css';
+import Mainpage from './Mainpage'
+import Quiz from './Quiz'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div  className="App-button-container">
-          <button className="App-button start">Start</button>
-          <button className="App-button history">History</button>
-        </div>
-      </header>
-    </div>
+    <BrowserRouter>        
+        <Route path="/index" component={Mainpage} />
+        <Route path="/quiz" component={Quiz} />
+    </BrowserRouter>
   );
 }
 
