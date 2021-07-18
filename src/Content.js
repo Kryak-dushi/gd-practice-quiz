@@ -1,5 +1,6 @@
 import Button from './Button'
 import './Mainpage.css';
+import './Quiz.css';
 
 function Content() {
     function goToQuiz() {
