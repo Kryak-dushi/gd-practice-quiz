@@ -3,11 +3,11 @@ import './Mainpage.css';
 
 function Content() {
     function goToQuiz() {
-        window.location.assign('http://localhost:3000/quiz/');
+        window.location.assign('http://localhost:3000/quiz');
     }
 
     function goToHistory() {
-        window.location.assign('http://localhost:3000/history/');
+        window.location.assign('http://localhost:3000/history');
     }
 
     return (
