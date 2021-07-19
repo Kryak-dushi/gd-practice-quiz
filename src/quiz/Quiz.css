@@ -1,0 +1,15 @@
+.quiz {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+}
+
+.quiz__button {
+    font-size: 2rem;
+    width: 800px;
+}
+
+.quiz__theme-text {
+    font-size: 2.5rem;
+    color: #ff6c52;
+    margin-bottom: 10px;
+}

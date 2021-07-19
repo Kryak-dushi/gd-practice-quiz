@@ -1,5 +1,3 @@
-import './Mainpage.css';
-
 function Button({ className, onClick, text }) {
 
     return (

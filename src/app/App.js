@@ -1,6 +1,6 @@
-import Mainpage from './Mainpage'
-import Quiz from './Quiz'
-import Result from './Result'
+import Mainpage from '../mainpage/Mainpage'
+import Quiz from '../quiz/Quiz'
+import Result from '../result/Result'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 function App() {
