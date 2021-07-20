@@ -1,8 +1,7 @@
 import '../mainpage/Mainpage.css';
-import '../quiz/Quiz.css';
-import '../content/Content.css';
-import '../button/Button.css'
 import './History.css'
+import QuizButton from '../QuizButton/QuizButton';
+import MainpageButton from '../MainpageButton/MainpageButton';
 import React from 'react';
 
 class History extends React.Component {
@@ -31,6 +30,11 @@ class History extends React.Component {
     render() {
         return (
             <div className="mainpage history">
+                <div className="mainpage__button-container">
+                    <MainpageButton />
+                    <QuizButton />
+                </div>
+                
                 <table>
                     <thead>
                         <tr>

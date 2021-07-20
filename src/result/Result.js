@@ -1,7 +1,8 @@
-import Button from '../button/Button';
+import HistoryButton from '../HistoryButton/HistoryButton'
+import QuizButton from '../QuizButton/QuizButton';
+import MainpageButton from '../MainpageButton/MainpageButton';
 import '../mainpage/Mainpage.css';
 import '../quiz/Quiz.css';
-import '../content/Content.css';
 import '../button/Button.css'
 import React from 'react';
 
@@ -13,16 +14,6 @@ class Result extends React.Component {
             theme: props.theme,
             date: new Date()
         };
-        this.goToMainpage.bind(this);
-        this.goToHistory.bind(this);
-    }
-
-    goToMainpage() {
-        window.location.assign('http://localhost:3000/index');
-    }
-
-    goToHistory() {
-        window.location.assign('http://localhost:3000/history');
     }
 
     scoreText() {
@@ -51,9 +42,10 @@ class Result extends React.Component {
         return (
             <div className="mainpage quiz">
                 <p>Вы набрали {this.state.correct_answers} {this.scoreText()} из 10</p>
-                <div className="content__button-container">
-                    <Button className="button button_red" text='Главная' onClick={this.goToMainpage} />
-                    <Button className="button button_yellow" text='История' onClick={this.goToHistory} />
+                <div className="mainpage__button-container">
+                    <QuizButton />
+                    <HistoryButton />
+                    <MainpageButton />
                 </div>
             </div>
         );
