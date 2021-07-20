@@ -34,7 +34,7 @@ class Quiz extends React.Component {
             );
         } else {
             ReactDOM.render(
-                <Result correct_answers={this.state.correct_answers} />,
+                <Result correct_answers={this.state.correct_answers} theme={Questions.quizes[this.state.quiz_index].theme} />,
                 document.getElementById('root')
             );
         }
