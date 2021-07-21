@@ -10,15 +10,11 @@ class Quiz extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            quiz_index: this.setQuizIndex(),
+            quiz_index: Math.floor(Math.random() * (Questions.quizes.length)),
             question_index: 0,
             correct_answers: 0
         }
         this.checkAnswer = this.checkAnswer.bind(this);
-    }
-
-    setQuizIndex() {
-        return Math.floor(Math.random() * (Questions.quizes.length))
     }
 
     changeQuestion(answer) {
@@ -33,8 +29,9 @@ class Quiz extends React.Component {
                 document.getElementById('root')
             );
         } else {
+            const result = this.state.correct_answers + (answer === Questions.quizes[this.state.quiz_index].questions[this.state.question_index].correctAnswer);
             ReactDOM.render(
-                <Result correct_answers={this.state.correct_answers} theme={Questions.quizes[this.state.quiz_index].theme} />,
+                <Result correct_answers={result} theme={Questions.quizes[this.state.quiz_index].theme} />,
                 document.getElementById('root')
             );
         }
