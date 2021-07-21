@@ -1,0 +1,22 @@
+.history {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+
+table {
+    margin: 3rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px;
+    border-bottom: 2px solid #ff6c52;
+    color: #ff6c52;
+}
+
+td {
+    padding: 10px 50px;
+    min-width: max-content;
+}
