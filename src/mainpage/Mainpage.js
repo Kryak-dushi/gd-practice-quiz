@@ -1,5 +1,4 @@
-import QuizButton from '../QuizButton/QuizButton';
-import HistoryButton from '../HistoryButton/HistoryButton';
+import Button from '../button/Button';
 import '../mainpage/Mainpage.css';
 
 function Mainpage() {
@@ -7,8 +6,8 @@ function Mainpage() {
     <div className="mainpage">
       <img src={process.env.PUBLIC_URL + '/quiz.png'} className="mainpage__logo" alt="logo" />
       <div className="mainpage__button-container">
-        <QuizButton />
-        <HistoryButton />
+        <Button className="button button_red" text='НАЧАТЬ' onClick={() => { window.location.assign('http://localhost:3000/quiz') }} />
+        <Button className="button button_yellow" text='ИСТОРИЯ' onClick={() => { window.location.assign('http://localhost:3000/history') }} />
       </div>
     </div>
   );

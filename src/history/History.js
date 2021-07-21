@@ -1,7 +1,6 @@
 import '../mainpage/Mainpage.css';
 import './History.css'
-import QuizButton from '../QuizButton/QuizButton';
-import MainpageButton from '../MainpageButton/MainpageButton';
+import Button from '../button/Button';
 import React from 'react';
 
 class History extends React.Component {
@@ -31,10 +30,10 @@ class History extends React.Component {
         return (
             <div className="mainpage history">
                 <div className="mainpage__button-container">
-                    <MainpageButton />
-                    <QuizButton />
+                    <Button className="button button_red" text='ГЛАВНАЯ' onClick={() => { window.location.assign('http://localhost:3000/index') }} />
+                    <Button className="button button_red" text='НАЧАТЬ' onClick={() => { window.location.assign('http://localhost:3000/quiz') }} />
                 </div>
-                
+
                 <table>
                     <thead>
                         <tr>

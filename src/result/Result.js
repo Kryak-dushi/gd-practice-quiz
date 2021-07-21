@@ -1,6 +1,4 @@
-import HistoryButton from '../HistoryButton/HistoryButton'
-import QuizButton from '../QuizButton/QuizButton';
-import MainpageButton from '../MainpageButton/MainpageButton';
+import Button from '../button/Button'
 import '../mainpage/Mainpage.css';
 import '../quiz/Quiz.css';
 import '../button/Button.css'
@@ -43,9 +41,9 @@ class Result extends React.Component {
             <div className="mainpage quiz">
                 <p>Вы набрали {this.state.correct_answers} {this.scoreText()} из 10</p>
                 <div className="mainpage__button-container">
-                    <QuizButton />
-                    <HistoryButton />
-                    <MainpageButton />
+                    <Button className="button button_red" text='ЕЩЁ РАЗ' onClick={() => { window.location.assign('http://localhost:3000/quiz') }} />
+                    <Button className="button button_yellow" text='ИСТОРИЯ' onClick={() => { window.location.assign('http://localhost:3000/history') }} />
+                    <Button className="button button_red" text='ГЛАВНАЯ' onClick={() => { window.location.assign('http://localhost:3000/index') }} />
                 </div>
             </div>
         );
