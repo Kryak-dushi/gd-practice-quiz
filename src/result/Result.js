@@ -10,7 +10,8 @@ class Result extends React.Component {
         this.state = {
             correct_answers: props.correct_answers,
             theme: props.theme,
-            date: new Date()
+            date: new Date(),
+            questions_count: props.questions_count
         };
     }
 
@@ -39,7 +40,7 @@ class Result extends React.Component {
         this.saveResult();
         return (
             <div className="mainpage quiz">
-                <p>Вы набрали {this.state.correct_answers} {this.scoreText()} из 10</p>
+                <p>Вы набрали {this.state.correct_answers} {this.scoreText()} из {this.state.questions_count}</p>
                 <div className="mainpage__button-container">
                     <Button className="button button_red" text='ЕЩЁ РАЗ' onClick={() => { window.location.assign('http://localhost:3000/quiz') }} />
                     <Button className="button button_yellow" text='ИСТОРИЯ' onClick={() => { window.location.assign('http://localhost:3000/history') }} />

@@ -11,5 +11,8 @@
 .quiz__theme-text {
     font-size: 2.5rem;
     color: #ff6c52;
-    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 80px;
 }
